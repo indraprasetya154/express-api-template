@@ -1,19 +1,24 @@
 {
   "name": "express-api-template",
   "version": "0.1.0",
-  "private": true,
+  "author": "Indra Prasetya",
+  "description": "A simple express API template",
+  "license": "MIT",
+  "main": "./src/server.js",
   "scripts": {
-    "start": "node ./src/bin/www",
-    "dev": "nodemon ./src/bin/www",
+    "start": "node ./src/server",
+    "dev": "nodemon ./src/server",
     "lint": "eslint ./src/**/*.js",
     "lint:fix": "npm run lint -- --fix"
   },
   "type": "module",
   "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
     "express": "~4.16.1",
-    "http-errors": "~1.6.3",
+    "express-async-handler": "^1.2.0",
+    "helmet": "^5.1.0",
     "morgan": "~1.9.1",
     "nodemon": "^2.0.16"
   },

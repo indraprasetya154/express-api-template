@@ -1,9 +1,9 @@
 import express from 'express';
 
-const indexRouter = express.Router();
+const routes = express.Router();
 
-indexRouter.get('/', (req, res) =>
+routes.get('/', (req, res) =>
   res.status(200).json({ message: 'Welcome to Express API template' })
 );
 
-export default indexRouter;
+export default routes;
